@@ -7,7 +7,7 @@ let level;
 // Function to Play Sound
 function playSound(name)
 {
-    let music = new Audio("/sounds/"+name+".mp3");
+    let music = new Audio(name+".mp3");
     music.play();
 }
 // Animation when button is clicked
@@ -18,7 +18,7 @@ function animatePress(currentColor) {
     }, 100);
 }
 
-$(".btn").click(function () { 
+$(".btn").click(function () { f
     let userChosenColour = this.id;
     animatePress(userChosenColour);
     playSound(userChosenColour);
@@ -44,7 +44,7 @@ $(".btn").click(function () {
         }, 200);
         gamePattern.length = 0;
         UserPatten.length = 0;
-        let gameover = new Audio("/sounds/wrong.mp3");
+        let gameover = new Audio("wrong.mp3");
         gameover.play();
         start = false;
         level = 1;
