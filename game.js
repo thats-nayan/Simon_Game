@@ -18,7 +18,7 @@ function animatePress(currentColor) {
     }, 100);
 }
 
-$(".btn").click(function () { f
+$(".btn").click(function () { 
     let userChosenColour = this.id;
     animatePress(userChosenColour);
     playSound(userChosenColour);
